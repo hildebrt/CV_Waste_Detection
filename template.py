@@ -8,7 +8,7 @@ project_name = 'wasteDetection'
 
 list_of_files = [
     '.github/workflows/.gitkeep',
-    'data/.gitkeep'
+    'data/.gitkeep',
     f'{project_name}/__init__.py',
     f'{project_name}/components/__init__.py',
     f'{project_name}/components/data_ingestion.py',
@@ -40,8 +40,8 @@ for filepath in list_of_files:
         os.makedirs(filedir, exist_ok=True)
         logging.info(f'Creating directory: {filedir} for file {file_name}')
 
-    if (not os.path.exists(file_name)) or (os.path.getsize(file_name == 0)):
-        with open(file_name, 'w') as f:
+    if (not os.path.exists(filepath)) or (os.path.getsize(filepath == 0)):
+        with open(filepath, 'w') as f:
             pass
         logging.info(f'Creating empty file: {file_name}')
     
