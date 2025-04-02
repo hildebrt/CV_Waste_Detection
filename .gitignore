@@ -177,3 +177,6 @@ cython_debug/
 .DS_Store
 artifacts/*
 data.zip
+__MACOSX/*
+train/*
+yolov5/*
